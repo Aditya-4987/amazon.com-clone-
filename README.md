@@ -31,7 +31,7 @@ This project demonstrates a modern e-commerce web app with authentication, shopp
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-username/amazon.com-clone-.git
+   git clone https://github.com/Aditya-4987/amazon.com-clone-.git
    cd amazon.com-clone-
    ```
 
