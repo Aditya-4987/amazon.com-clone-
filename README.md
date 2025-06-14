@@ -3,6 +3,13 @@
 A fully functional Amazon.com clone built with React, Firebase, and Material UI.  
 This project demonstrates a modern e-commerce web app with authentication, shopping cart, and checkout features.
 
+**🚀 Live Demo:**
+
+<p>
+  <a href="https://clone-a9f85.web.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit-blue?style=for-the-badge&logo=vercel" alt="Live Demo" />
+  </a>
+</p>
 ## Features
 
 - User authentication (sign up, sign in, sign out) with Firebase Auth
@@ -93,4 +100,4 @@ This project is for educational purposes only and is not affiliated with Amazon.
 
 ---
 
-Made with ❤️ using React and Firebase.
+Made with ❤️ using React and Firebase.~by Aditya Pratap Singh
