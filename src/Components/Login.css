@@ -1,0 +1,97 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.login_logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login_container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+.login_container > h1 {
+  align-self: center;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.login_container > form {
+  padding-top: 18px;
+  border-top: 1px solid lightgrey;
+}
+.login_container > form > h5 {
+  margin-bottom: 2.5px;
+}
+.login_container > form > input {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 285px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.login_container > p {
+  align-self: center;
+  width: 250px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+.login_signInButton {
+  transform: scale(0.9);
+  transition: transform 0.2s, background-color 0.4s;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: transparent;
+  color: black;
+  border: #e7a116;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.login_container:hover > form > button:hover {
+  border: 1px solid #f3c9a0;
+  background-color: #f3c9a0;
+}
+.login_container:hover > form > button {
+  transform: scale(1);
+  background-color: #e7a116;
+  transition: transform 0.2s, background-color 0.4s;
+}
+.login_registerButton {
+  transform: scale(0.9);
+  transition: transform 0.2s, background-color 0.4s;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: transparent;
+  color: black;
+  border: #e7a116;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.login_registerButton:hover {
+  transform: scale(1);
+  border: 1px solid #f3c9a0;
+  background-color: #f3c9a0;
+  transition: transform 0.2s, background-color 0.4s, border 0.4s;
+}

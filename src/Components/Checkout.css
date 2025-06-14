@@ -7,7 +7,9 @@
 }
 .checkout_left {
   min-width: 600px;
+  max-width: 1200px;
   margin: 10px;
+  margin-right: 20px;
   padding: 10px;
   background-color: white;
   border: 1px solid lightgrey;
@@ -16,13 +18,24 @@
 }
 .checkout_left:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  transition: transform 1s ease-in-out;
+  transition: box-shadow 0.2s;
 }
 .checkout_title {
   border-bottom: 1px solid lightgrey;
+  padding-left: 20px;
+  padding: 10px;
 }
 .checkout_right {
   min-width: 250px;
-  margin: 10px;
   background-color: white;
+  margin-top: 10px;
+  position: sticky;
+  top: 90px;
+  align-self: flex-start;
+}
+.checkout_empty p {
+  text-align: center;
+  font-size: 13.5px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }

@@ -12,12 +12,12 @@
 }
 .subtotal:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  transition: transform 1s ease-in-out;
+  transition: box-shadow 0.2s;
 }
 .subtotal:hover > button {
   transform: scale(1);
   background-color: #e7a116;
-  transition: transform 0.2s ease, background-color 0.4s ease;
+  transition: transform 0.2s, background-color 0.4s;
 }
 .subtotal_gift {
   display: flex;
@@ -28,6 +28,7 @@
 }
 .subtotal > button {
   transform: scale(0.9);
+  transition: transform 0.2s, background-color 0.4s;
   width: 100%;
   justify-content: space-evenly;
   background-color: transparent;
