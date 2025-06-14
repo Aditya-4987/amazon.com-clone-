@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Amazon.com Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional Amazon.com clone built with React, Firebase, and Material UI.  
+This project demonstrates a modern e-commerce web app with authentication, shopping cart, and checkout features.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User authentication (sign up, sign in, sign out) with Firebase Auth
+- Add and remove products from the shopping basket
+- View shopping cart and subtotal calculation
+- Responsive UI with Material UI and custom CSS
+- Real-time state management using React Context API
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React](https://react.dev/)
+- [Firebase](https://firebase.google.com/) (Authentication & Firestore)
+- [React Router](https://reactrouter.com/) (Routing)
+- [Material UI](https://mui.com/) (Icons & Components)
+- [React Context API](https://react.dev/reference/react/useContext) (State Management)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16 or above recommended)
+- npm
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   git clone https://github.com/your-username/amazon.com-clone-.git
+   cd amazon.com-clone-
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
 
-### `npm run eject`
+   ```sh
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Configure Firebase:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable Email/Password authentication.
+   - Create a Firestore database.
+   - Copy your Firebase config and replace it in [`src/Components/firebase.js`](src/Components/firebase.js).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the development server:**
+   ```sh
+   npm start
+   ```
+   The app will run at [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Folder Structure
 
-## Learn More
+```
+src/
+  Components/
+    Checkout.js
+    CheckoutProduct.js
+    firebase.js
+    Header.js
+    Home.js
+    Login.js
+    Product.js
+    Subtotal.js
+  App.js
+  StateProvider.js
+  reducer.js
+  index.js
+public/
+  index.html
+  ...
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Sign Up / Sign In:**  
+  Create an account or log in using your email and password.
+- **Browse Products:**  
+  View products on the home page and add them to your basket.
+- **Shopping Cart:**  
+  Click the cart icon in the header to view or remove items from your basket.
+- **Checkout:**  
+  View the subtotal and proceed to checkout (demo only).
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is for educational purposes only and is not affiliated with Amazon.com.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ using React and Firebase.
